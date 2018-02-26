@@ -453,6 +453,14 @@ cygwin)
   CFLAGS="$CFLAGS -D__USE_LINUX_IOCTL_DEFS"
 esac
 
+AC_MSG_ERROR([
+
+*** Support for this branch has ended.
+*** Please use swtpm's tpm2-preview.v2 and libtpms's tpm2-preview.rev146.v2
+*** or later branch.
+*** Sice the format of the TPM 2 state has changed, please remove all TPM 2
+*** state files tpm2-00.permall and tpm2-00.volatilestate.])
+
 AC_CONFIG_FILES([Makefile                    \
 		dist/swtpm.spec             \
 		etc/Makefile                \
